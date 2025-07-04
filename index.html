@@ -1,24 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SpedizioniVeloci.it</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Spedizioni Veloci</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div id="logo">
-      <img src="logo.png" alt="Logo Spedizioni Veloci" style="height:40px; vertical-align:middle;">
-      <span>SpedizioniVeloci.it</span>  
-    </div>
+    <img src="logo.png" alt="Logo Spedizioni Veloci" class="logo">
+    <h1>Spedizioni Veloci</h1>
   </header>
+
   <main>
-    <h1>Benvenuto su SpedizioniVeloci.it</h1>
-    <p>Spedisci pacchi in Italia ed Europa in pochi click.</p>
+    <h2>Inserisci i dati per la spedizione</h2>
+    <form action="https://formspree.io/f/xwpbzgqe" method="POST">
+      <label>Nome e Cognome:</label><br>
+      <input type="text" name="nome" required><br><br>
+
+      <label>Indirizzo completo:</label><br>
+      <input type="text" name="indirizzo" required><br><br>
+
+      <label>CAP:</label><br>
+      <input type="text" name="cap" required><br><br>
+
+      <label>Città:</label><br>
+      <input type="text" name="citta" required><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" name="email" required><br><br>
+
+      <label>Telefono:</label><br>
+      <input type="tel" name="telefono"><br><br>
+
+      <label>Note:</label><br>
+      <textarea name="note"></textarea><br><br>
+
+      <button type="submit">Invia</button>
+    </form>
   </main>
-  <footer>
-    <p>Contatti: spedizioniveloci@libero.it</p>
-  </footer>
 </body>
 </html>
